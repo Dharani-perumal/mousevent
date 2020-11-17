@@ -1,0 +1,43 @@
+<html>
+
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOLLOW ME</title>
+<style>
+    #main-content{
+        height:200px;
+        width: 200px;
+        background-color:lightcoral ;
+        border: 2px solid #f1f1f1;
+        box-sizing: border-box;
+        font-weight:20px;
+        font-size: larger;
+        position: absolute;
+        padding-top:90px;
+        padding-left: 50px;
+        cursor:pointer;
+       
+    }
+</style>
+</head>
+<body  onmousemove="hover1(event)">
+   
+    <div id="main-content"  > <i>Follow me</i></div>
+        <script>
+            function hover1(event){
+           var ele=document.getElementById('main-content')
+         
+         var y = event.clientY;
+         ele.style.backgroundColor="lightgreen";
+        
+         ele.style.left=event.clientX+"px";
+         ele.style.top=event.clientY+"px";
+}
+           
+         </script>
+   
+</body>
+</html>
